@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="menu" aria-label="Điều hướng chính">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#ky-nang">Kỹ năng</a>
+        <a href="#du-an">Dự án</a>
+        <a href="#lo-trinh">Lộ trình học tập</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <main class="container">
+    <section id="gioi-thieu">
+      <h1>Đặng Văn Quyết</h1>
+      <p>Xin chào, mình là sinh viên ngành Công nghệ thông tin</p>
+      <figure>
+        <img src="assets/kk.jpg" alt="Avatar Đặng Văn Quyết" width="200" height="200">
+      </figure>
+    </section>
+
+    <section id="ky-nang">
+      <h2>Kỹ năng</h2>
+      <ul class="skills-list">
+        <li>Ngôn ngữ đánh dấu: HTML5</li>
+        <li>Trình bày & Bố cục: CSS3, Flexbox, Grid</li>
+        <li>Công cụ thiết kế & lập trình: VS Code, Git</li>
+      </ul>
+    </section>
+
+    <section id="du-an">
+      <h2>Dự án</h2>
+      <div class="project-grid">
+        <article class="card">
+          <h3>Trang web bán sách trực tuyến</h3>
+          <p>Xây dựng giao diện tĩnh cho một cửa hàng sách trực tuyến có khả năng hiển thị tốt trên nhiều kích thước màn hình.</p>
+          <a href="#lien-he">Thử liên hệ ngay</a>
+        </article>
+        <article class="card">
+          <h3>Ứng dụng quản lý thời gian cá nhân</h3>
+          <p>Thiết kế ứng dụng di động giúp người dùng theo dõi và phân bổ thời gian học tập hiệu quả.</p>
+          <a href="#lien-he">Xem chi tiết</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="lo-trinh">
+      <h2>Lộ trình học tập</h2>
+      <ol class="roadmap-list">
+        <li>
+          <h3>Năm 1 - Nhập môn và Cơ sở</h3>
+          <p>Hoàn thành các môn Cơ sở lập trình, Cơ sở dữ liệu và thu thập kiến thức nền tảng về CNTT.</p>
+        </li>
+        <li>
+          <h3>Năm 2 - Thiết kế Web và Phần mềm</h3>
+          <p>Học phần FIT4014: Thiết kế giao diện và triển khai hệ thống phần mềm thực tế.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="lien-he">
+      <h2>Liên hệ</h2>
+      <p>Form mô phỏng tương tác, có kiểm tra ràng buộc dữ liệu phía trình duyệt.</p>
+      
+      <!-- Bổ sung action và method mô phỏng theo chuẩn Lab 5 -->
+      <form action="ket-qua.html" method="get">
+        <div class="form-group">
+          <label for="ho-ten">Họ và tên (bắt buộc)</label>
+          <input type="text" id="ho-ten" name="ho_ten" required minlength="2" autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email (bắt buộc)</label>
+          <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="email-help">
+          <p class="help" id="email-help" style="font-size: 0.85rem; color: #64748b; margin: 0.2rem 0 0 0;">Ví dụ: anyone@example.com</p>
+        </div>
+
+        <div class="form-group">
+          <label for="noi-dung">Nội dung (bắt buộc)</label>
+          <textarea id="noi-dung" name="noi_dung" rows="4" required minlength="10" maxlength="500" aria-describedby="noi-dung-help"></textarea>
+          <p class="help" id="noi-dung-help" style="font-size: 0.85rem; color: #64748b; margin: 0.2rem 0 0 0;">Nhập từ 10 đến 500 ký tự.</p>
+        </div>
+
+        <button type="submit">Gửi thông tin</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Đặng Văn Quyết. Tất cả quyền được bảo lưu.</p>
+    </div>
+  </footer>
+</body>
+</html>
